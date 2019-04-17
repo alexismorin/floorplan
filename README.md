@@ -1,6 +1,5 @@
 # floorplan
 ## A Sims-Like Unity Level Design Plugin
-#### Compatible with Unity 2019.1 and up
 
 ![gif](images/gif.gif)
 
@@ -33,7 +32,7 @@ This is a plugin that makes use of Unity's new *Package Manager* feature. Just d
 ![packman](images/packman.png)
 
 ### Bugs
-- Breaks in versions older than 2019.1, the walls won't spawn in their proper locations
+- If you import this package in Unity 2018.3 or older, you might have to adjust the default tileset prefab for walls and pillars as the downgrade might mess with them a bit.
 
 ### TODO
 - Make it snap without having to hold down the control key 
