@@ -5,7 +5,7 @@
 
 ### About
 
-While I do tend to appreciate level design prototyping tools like ProBuilder, I feel that ultimately they kind of turn into a hindrance when it's time to turn their scratch geometry into a final level. For my less minimalistic projects, I tend to use the "modular kit" workflow, where I use a small ammount of tileable meshes (eg. floor tiles, wall tiles, door arches, etc) that I turn into prefabs, place inside of the scene and then iterate on in Maya. 
+While I do tend to appreciate level design prototyping tools like ProBuilder, I feel that ultimately they kind of turn into a hindrance when it's time to turn their scratch geometry into a final level. For my less minimalistic projects, I tend to use the "modular kit" workflow, where I use a small ammount of tileable meshes (eg. floor tiles, wall tiles, door arches, etc) that I turn into prefabs, place inside of the scene and then iterate on in Maya. While I find it the most comfortable workflow for me, I still had the pain point of having to place a bunch of items in the scene afterwards. Enough with the copy-pasting!
 
 ![meshes](images/defaultmeshes.png)
 
