@@ -1,5 +1,6 @@
 # floorplan
 ## A Sims-Like Unity Level Design Plugin
+#### Compatible with Unity 2019.1 and up
 
 ![gif](images/gif.gif)
 
@@ -27,9 +28,12 @@ The meshes aren't logged anywhere - I will revisit once I use this tool in a rea
 You can have multiple custom tilesets spawning different looking buildings in the same project - look into the DefaultTilekit folder and copy to your heart's contents.
 
 ### Install process
-This is a plugin that makes use of Unity's new *Package Manager* feature. Just drop the *com.alexismorin.floorplan* folder into your *packages* folder (found at the same level as your Assets folder) and it should work out-of-the-box. If you're using an older version of Unity, navigate inside the *com.alexismorin.floorplan* folder and then just drag everything you find there anywhere in your project hierarchy.
+This is a plugin that makes use of Unity's new *Package Manager* feature. Just drop the *com.alexismorin.floorplan* folder into your *packages* folder (found at the same level as your Assets folder) and it should work out-of-the-box.
 
 ![packman](images/packman.png)
+
+### Bugs
+- Breaks in versions older than 2019.1, the walls won't spawn in their proper locations
 
 ### TODO
 - Make it snap without having to hold down the control key 
