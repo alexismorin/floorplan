@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -61,7 +62,9 @@ public class floorplan : MonoBehaviour {
 
     public void createInstance (GameObject instanceType, Vector3 spawnPosition, Quaternion spawnRotation) {
 
-        GameObject instance = GameObject.Instantiate (instanceType, spawnPosition, spawnRotation);
+        GameObject instance = PrefabUtility.InstantiatePrefab (instanceType) as GameObject;
+        instance.transform.position = spawnPosition;
+        instance.transform.rotation = spawnRotation;
         instance.transform.parent = geometryRoot.transform;
         instance.GetComponent<floorplanComponent> ().tileset = tileset;
         instance.name = instanceType.name;
