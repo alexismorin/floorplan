@@ -23,6 +23,9 @@ With this package, you can then turn these simple prefabs into a small tileset d
 
 The meshes aren't logged anywhere - I will revisit once I use this tool in a real project but I assume that the best practice would be doing a rough pass with this then manually adding/deleting prefabs where needed.
 
+### Custom Tilesets
+You can have multiple custom tilesets spawning different looking buildings in the same project - look into the DefaultTilekit folder and copy to your heart's contents.
+
 ### Install process
 This is a plugin that makes use of Unity's new *Package Manager* feature. Just drop the *com.alexismorin.floorplan* folder into your *packages* folder (found at the same level as your Assets folder) and it should work out-of-the-box. If you're using an older version of Unity, navigate inside the *com.alexismorin.floorplan* folder and then just drag everything you find there anywhere in your project hierarchy.
 
