@@ -1,0 +1,12 @@
+{
+    "name": "com.alexismorin.floorplan",
+    "displayName": "Floorplan",
+    "version": "1.0.0",
+    "unity": "2019.2",
+    "description": "A Sims-Like Unity Level Design Plugin",
+    "keywords": [
+        "building",
+        "blocking"
+    ],
+    "category": "Open-Source"
+}

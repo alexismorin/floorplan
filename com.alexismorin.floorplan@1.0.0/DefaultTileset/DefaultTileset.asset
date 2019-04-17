@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8441b0125f23fb644b2d1fbd1835ee18, type: 3}
+  m_Name: DefaultTileset
+  m_EditorClassIdentifier: 
+  floorTile: {fileID: 254791854324832132, guid: 381ed00a800c7ae438567827f63d59ab,
+    type: 3}
+  wallTile: {fileID: 521578371659750298, guid: b15f933ae2fe0b545a5adfb036e3a417, type: 3}
+  archTile: {fileID: 764512528839231858, guid: 934ba286f9a61cf4c8abe65a39b8202c, type: 3}
+  windowTile: {fileID: 2760337413371881268, guid: 2a4fccde007ea954484dfa6e6e7a6a70,
+    type: 3}
+  pillarTile: {fileID: 6653626983322759584, guid: b4e0bf2c4458c7d4781665e683e55262,
+    type: 3}

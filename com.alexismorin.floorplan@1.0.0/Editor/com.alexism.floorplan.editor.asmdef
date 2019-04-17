@@ -1,0 +1,17 @@
+{
+    "name": "com.alexism.floorplan.editor",
+    "references": [
+        "com.alexism.floorplacom.alexism.floorplan"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
