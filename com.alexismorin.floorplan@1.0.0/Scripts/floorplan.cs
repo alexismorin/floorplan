@@ -14,6 +14,7 @@ public class floorplan : MonoBehaviour {
     public bool spawnFloors;
     public bool spawnPillars; // spawn pillars all the time,otherwise only spawn when turning corners
     Vector3 lastHandlePosition;
+    Vector3 snapLastHandlePosition;
     Vector3 handlePosition;
     Vector3 lastTileDelta;
     Vector3 tileDelta;
@@ -21,17 +22,39 @@ public class floorplan : MonoBehaviour {
     float tileSize = 2f;
     Color gizmoColor = Color.red;
 
+    void OnEnable () {
+        snapLastHandlePosition = transform.position;
+    }
+
     void Start () {
+        snapLastHandlePosition = transform.position;
         geometryRoot = GameObject.Find ("New Floorplan Geometry");
     }
 
     void Update () {
         if (transform.hasChanged) {
-            lastHandlePosition = handlePosition;
-            handlePosition = transform.position;
-            floorplanHandleCallBack ();
-            transform.hasChanged = false;
+
+            Vector3 snappedPosition = new Vector3 (Mathf.Ceil (transform.position.x), Mathf.Ceil (transform.position.y), Mathf.Ceil (transform.position.z));
+            transform.position = snappedPosition;
+            //    Vector3 deltaMovePosition = new Vector3 (snappedPosition.x - snapLastHandlePosition.x, snappedPosition.y - snapLastHandlePosition.y, snappedPosition.z - snapLastHandlePosition.z);
+            //    Vector3 tileSizeAdjustedSnap = (tileSize * deltaMovePosition);
+
+            //   Vector3 deltaTileSizeAdjustedSnap = transform.position + tileSizeAdjustedSnap;
+            //   print (deltaTileSizeAdjustedSnap);
+            if (snappedPosition.x % 2 == 0 && snappedPosition.z % 2 == 0) {
+                //  print (deltaTileSizeAdjustedSnap);
+                //  print (transform.position);
+
+                transform.position = snappedPosition;
+
+                lastHandlePosition = handlePosition;
+                handlePosition = transform.position;
+                floorplanHandleCallBack ();
+                transform.hasChanged = false;
+                snapLastHandlePosition = transform.position;
+            }
         }
+
     }
 
     void floorplanHandleCallBack () {
