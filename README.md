@@ -45,4 +45,4 @@ This is a plugin that makes use of Unity's new *Package Manager* feature. Just d
 - Better control on doors
 - More pleasant UX
 
-This was, as is it par with all my packages, created in around 5-6 hours on my couch. If it doesn't break, enjoy!
+This was, as is it par with all my packages, created in around 5-6 hours on my couch. If it doesn't break for you, enjoy!
